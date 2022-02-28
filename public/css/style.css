@@ -1,0 +1,438 @@
+body {
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* верхнее меню */
+.navbar {
+    background: #000000;
+    margin-bottom: 20px;
+}
+/* верхнее меню */
+
+/* верхнее меню мобильная версия */
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+/* верхнее меню мобильная версия */
+
+/* все ссылки */
+ a {
+    color: #000000;
+     text-decoration: none;
+}
+
+a:hover {
+    color: #F9AF0E;
+    text-decoration: none;
+}
+
+a:active {
+    color: #F9AF0E;
+}
+/* все ссылки */
+
+/* логотип в верхнем меню */
+.navbar-light .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 10%;
+    padding-right: 10%;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #F9AF0E;
+}
+/* логотип в верхнем меню */
+
+/* ссылки в верхнем меню */
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #F9AF0E;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #F9AF0E;
+}
+
+.navbar-light .navbar-nav .nav-link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    padding-top: 1px;
+    background-color: #F9AF0E;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after,
+.nav-link:focus:after {
+   width: 100%;
+}
+
+/* ссылки в верхнем меню */
+
+a.logo {
+    font-size: 32px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a.down {
+    font-size: 18px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+table {
+    text-align: left;
+}
+
+div.thumbnail img {
+    max-height: 200px;
+}
+
+div.form-inline form {
+    display: inline;
+}
+
+div.labels {
+    position: absolute;
+}
+
+div.labels span.badge {
+    display: block;
+}
+
+span.badge.badge-success {
+    color: #fff;
+    background-color: #000000;
+}
+
+span.badge.badge-warning {
+    color: #fff;
+    background-color: #F9AF0E;
+}
+
+span.badge.badge-danger {
+    color: #000000;
+    background-color: #F9AF0E;
+}
+
+.btn-default {
+    background: #F9AF0E;
+    color: #000000;
+}
+
+.btn-default:hover {
+    color: #F9AF0E;
+    background-color: #000000;
+}
+
+.btn-warning {
+    background: #000000;
+    border: #000000;
+    color: #F9AF0E;
+}
+
+.btn-warning:hover {
+    color: #000000;
+    background-color: #F9AF0E;
+}
+
+.btn-primary {
+    background: #F9AF0E;
+    border: #F9AF0E;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background: #000000;
+    border: #000000;
+    color: #F9AF0E;
+}
+
+.card .btn-primary {
+
+    text-transform: uppercase;
+}
+
+.card .btn-default {
+    text-transform: uppercase;
+    background: #000000;
+    color: #F9AF0E;
+}
+
+.card .btn-default:hover {
+    text-transform: uppercase;
+    background: #F9AF0E;
+    color: #000000;
+}
+
+div.filters {
+    padding-bottom: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    margin: 20px;
+}
+
+
+.pagination {
+   justify-content: center;
+ }
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #000000;
+    background-color: #F9AF0E;
+    border-color:#F9AF0E;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #F9AF0E;
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.page-link:hover {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #000000;
+    background-color: #F9AF0E;
+    border-color:#F9AF0E;
+}
+
+.page-item.disabled .page-link {
+    color: #F9AF0E;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #000000;
+    border-color:#000000;
+}
+
+p.disabled {
+    font-weight: bold;
+    font-size: 20px;
+    color: #F9AF0E;
+}
+
+/* модальное окно на странице товара */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #000000;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.modal-content h5 {
+    color: #ffffff;
+}
+
+.modal-body {
+    color:  #ffffff;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #F9AF0E;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+.close:hover {
+    color: #F9AF0E;
+
+}
+/* модальное окно на странице товара */
+
+/* подвал сайта */
+.footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    font-style: italic;
+    background: #000000;
+    margin-bottom: -15px;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+.footer a:hover {
+    color: #F9AF0E;
+}
+/* подвал сайта */
+
+/* ссылки в подвале  */
+
+.footer a {
+    position: relative;
+    color: #ffffff; /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1; /*задаём высоту строки*/
+    text-decoration: none; /*убираем подчёркивание*/
+}
+
+.footer a:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;/*задаём длинну линии до наведения курсора*/
+    height: 2px; /*задаём ширину линии*/
+    background-color: #F9AF0E; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.footer a:hover:after,
+.footer a:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+/* ссылки в подвале  */
+
+
+/* изображения в категориях */
+.categories-img {
+    height: 50px;
+    width: 50px;
+}
+/* изображения в категориях */
+
+/* строки и столбцы в таблицах */
+table td, th, tr {
+    color: #000000;
+}
+/* строки и столбцы в таблицах */
+
+/* оформить заказ кнопка в корзине и плюс в добавлении кол-ва товаров */
+.btn-success {
+    background: #F9AF0E;
+    border: #F9AF0E;
+    color: #000000;
+}
+
+.btn-success:hover {
+    background: #000000;
+    border: #000000;
+    color: #F9AF0E;
+}
+/* оформить заказ кнопка в корзине и плюс в добавлении кол-ва товаров */
+
+/* минус в добавлении кол-ва товаров */
+.btn-danger:hover {
+    background: #F9AF0E;
+    border: #F9AF0E;
+    color: #000000;
+}
+
+.btn-danger {
+    background: #000000;
+    border: #000000;
+    color: #F9AF0E;
+}
+/* минус в добавлении кол-ва товаров */
+
+/* таблица в корзине */
+.table {
+    border-color: #F9AF0E;
+}
+
+/* таблица в корзине */
+
+/* в админке в заказ кол-во товаров */
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+/* в админке в заказ кол-во товаров */
+
+/* вход и регистрация формы */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid #000000;
+}
+
+/* вход и регистрация формы */
+
+
